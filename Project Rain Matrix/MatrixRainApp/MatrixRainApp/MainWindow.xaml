@@ -1,0 +1,27 @@
+﻿<Window x:Class="MatrixRainApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatrixRainApp"
+        xmlns:Matrix="clr-namespace:MatrixRain;assembly=MatrixRain"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Matrix Rain" Height="600" Width="1200">
+    <Grid Background="Black">
+        <Matrix:MatrixRain x:Name="mRain" HorizontalAlignment="Left" Height="524" Margin="10,35,0,0" VerticalAlignment="Top" Width="1172"/>
+        <Grid x:Name="UIInterectionContainer">
+            <Button Content="Iniciar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="_StartButton"/>
+            <Button Content="Parar" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Click="_StopButton"/>
+            <Button Content="Step1" HorizontalAlignment="Left" Margin="254,10,0,0" VerticalAlignment="Top" Width="75" Click="_ChangeCorButton" Background="Lime"/>
+            <Button Content="Step2" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top" Width="75" Click="_ChangeCorButton">
+                <Button.Background>
+                    <RadialGradientBrush GradientOrigin="0.5,0.5">
+                        <GradientStop Color="Yellow" Offset="0"/>
+                        <GradientStop Color="Orange" Offset="0.5"/>
+                        <GradientStop Color="Red" Offset="1"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
