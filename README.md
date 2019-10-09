@@ -1,3 +1,3 @@
 # MatrixRain
-(EM DESENVOLVIMENTO AINDA) Uma tela em que mostra uma "chuva de matrix"
-Por enquanto há apenas 2 cores, mais tarde serão adicionadas mais, assim como uma fonte própria, pois no momento o arquivo .ttf não foi feito por mim
+(DEVELOPING STILL) A screen showing a "matrix rain"
+For now there are only 2 colors, more will be added later, as well as a font of my own, because at the moment the .ttf file was not made by me
